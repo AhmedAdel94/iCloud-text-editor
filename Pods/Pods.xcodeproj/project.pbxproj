@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		107B49DB0B033FA4F56D56CF575D5EB1 /* SourceCodeRegexLexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181FC9932528B2FEC7BBA808BC96959D /* SourceCodeRegexLexer.swift */; };
+		237D396BA4C5000F66E836836BCFE901 /* SourceCodeToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52B12322F23B2CA4D984CA0BCACB600 /* SourceCodeToken.swift */; };
+		25C94DE881BC7188E01A7955F0BD24D2 /* Sourceful-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B943C8C56E784535AB9BF83E0D013C /* Sourceful-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		268C3D98452530E1ED68337EE9C7B8BC /* SwiftLexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BD723DBBE83A42B13DD3F663EEE969 /* SwiftLexer.swift */; };
+		285B368DF0F5C9B2B6E2044125D6AF9C /* InnerTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331D69DFB112B4C97C80919F9503A12F /* InnerTextView.swift */; };
+		301B0D565B70275E9BFB7F66B2B6626C /* SyntaxTextView+TextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D501B060E52883F3D66368F12F5E7 /* SyntaxTextView+TextViewDelegate.swift */; };
+		35D7188A8D5091F3F6481518EE2CEC18 /* NSTextView+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC100D5A99118D0522AA635A7BF1EB /* NSTextView+UIKit.swift */; };
+		3DB3A0255E86CD3C3F2DD0C694658549 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		3F9D6F5F34C6AEE7B32DD41ED6819FDC /* LineNumberLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5116632417FE511BE404D12E8CB85963 /* LineNumberLayoutManager.swift */; };
+		4741DD6F6B82642D3F5499CACE38BE16 /* SyntaxTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5882265EDF6546E0CC16AD6F8FCAA7A4 /* SyntaxTextView.swift */; };
+		50C7CA82AFB9E99598072460CC46935F /* Pods-iCloud text editor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 580B9E5EDCA0BD147E6F806EF06AC5A1 /* Pods-iCloud text editor-dummy.m */; };
+		6425B0D54BCF5A5639C82A030A6ADBE2 /* ASTVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130EAB4D9D5A9BFB53A8B4E78890100E /* ASTVisualizer.swift */; };
+		72786BC816553F48AC56FADB0D97E193 /* Paragraphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39059843D104074A9F85E22A94DFD02 /* Paragraphs.swift */; };
+		7D40347164E2C33A8A11D25E59001D49 /* Pods-iCloud text editor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30E87C0CF1A5C16547692C193F49F0B6 /* Pods-iCloud text editor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8476C5EF64EC14AE95AE3F6A3346C998 /* Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6934E978F9B62F5B68E98738744A8CF4 /* Paragraph.swift */; };
+		8C2A23050C9DFA5982041145212D84D6 /* RegexLexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2F5E549B094F8AB395116F7DF83C2 /* RegexLexer.swift */; };
+		973FB3BEA3A0CE0434983482FBDE59FE /* TextViewWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69358BADF7D94676AB13DAEC1EF1A59 /* TextViewWrapperView.swift */; };
+		9751658B0244CE42D1AC39B36A3F4579 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D74317E60984BE0D0158E85F61808F /* Lexer.swift */; };
+		B38293C421FF42503DE3B481DE5AC101 /* SourceCodeTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545BE82D454BE3C5FDAF39FCDF79CF4 /* SourceCodeTheme.swift */; };
+		B9639032B067BE01FD9AC6B3653282D1 /* Sourceful-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3ACC9C58287396F5F08B9D508EE23 /* Sourceful-dummy.m */; };
+		D309769A6F1D4F08C2D4E9C41DC5D1B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D348750C48BEB8AEB4E50F28279137B2 /* String+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5EABA9E84DB2F0435A65CE592F5F02 /* String+Range.swift */; };
+		D3499467A875700023628862A6DBA4F3 /* NSMutableAttributedString+Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89D09380AB6275CB698624AC05D1BF6 /* NSMutableAttributedString+Tokens.swift */; };
+		DCF3683F93F173B04858C6F93D74F32A /* Python3Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39655EE7CF9F9AAD7EF68D2B747214 /* Python3Lexer.swift */; };
+		DCFD5DD96372033FD6833F614A21D499 /* SyntaxTextViewLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434631A1BB401D32BF6A48498796811A /* SyntaxTextViewLayoutManager.swift */; };
+		E2A240E7EE2D1FAB5DA8590C26D7D10F /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990AEECF6DFCE6B554BD44DECDE62632 /* Token.swift */; };
+		E5C443E0BC502A20D93EB89F68927C3C /* SyntaxColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70959EA61D921435952172271E37277B /* SyntaxColorTheme.swift */; };
+		E79B2BE806EF7859ABAB5BE7CC179670 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C479B3A3C0BB83FCBD23CADB2E45BD4 /* Types.swift */; };
+		FE59E45DFB86448BFDABCFEC6C230891 /* DefaultSourceCodeTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131EE9DCCDA57AEEB476A0D7469A6BB /* DefaultSourceCodeTheme.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AC59CC752413CB3F1121400EAA288CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 608A783A94C637907E2BD7379BA798B2;
+			remoteInfo = Sourceful;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0815C3EBE83FC43D1EE0633E115623C8 /* Sourceful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Sourceful.framework; path = Sourceful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF2F5E549B094F8AB395116F7DF83C2 /* RegexLexer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegexLexer.swift; path = Sources/Model/RegexLexer.swift; sourceTree = "<group>"; };
+		0F0338D8E0B7932B8E4021DDEAB332B3 /* Sourceful.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Sourceful.modulemap; sourceTree = "<group>"; };
+		12B943C8C56E784535AB9BF83E0D013C /* Sourceful-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sourceful-umbrella.h"; sourceTree = "<group>"; };
+		130EAB4D9D5A9BFB53A8B4E78890100E /* ASTVisualizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASTVisualizer.swift; path = Sources/ASTVisualizer.swift; sourceTree = "<group>"; };
+		181FC9932528B2FEC7BBA808BC96959D /* SourceCodeRegexLexer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceCodeRegexLexer.swift; path = Sources/SourceCodeRegexLexer.swift; sourceTree = "<group>"; };
+		2131EE9DCCDA57AEEB476A0D7469A6BB /* DefaultSourceCodeTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultSourceCodeTheme.swift; path = Sources/Themes/DefaultSourceCodeTheme.swift; sourceTree = "<group>"; };
+		22D74317E60984BE0D0158E85F61808F /* Lexer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lexer.swift; path = Sources/Model/Lexer.swift; sourceTree = "<group>"; };
+		30E87C0CF1A5C16547692C193F49F0B6 /* Pods-iCloud text editor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iCloud text editor-umbrella.h"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		331D69DFB112B4C97C80919F9503A12F /* InnerTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InnerTextView.swift; path = Sources/View/InnerTextView.swift; sourceTree = "<group>"; };
+		4087153057507FFFC7943AE3DA2CF056 /* Pods-iCloud text editor-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iCloud text editor-frameworks.sh"; sourceTree = "<group>"; };
+		434631A1BB401D32BF6A48498796811A /* SyntaxTextViewLayoutManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyntaxTextViewLayoutManager.swift; path = Sources/View/SyntaxTextViewLayoutManager.swift; sourceTree = "<group>"; };
+		4545BE82D454BE3C5FDAF39FCDF79CF4 /* SourceCodeTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceCodeTheme.swift; path = Sources/SourceCodeTheme.swift; sourceTree = "<group>"; };
+		4AA101ACCE933C564A894EF90AEA7B4E /* Pods-iCloud text editor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iCloud text editor.modulemap"; sourceTree = "<group>"; };
+		5116632417FE511BE404D12E8CB85963 /* LineNumberLayoutManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineNumberLayoutManager.swift; path = Sources/View/LineNumberLayoutManager.swift; sourceTree = "<group>"; };
+		5631A23D4B6D3E088C3F5B82BA051FE3 /* Pods-iCloud text editor-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iCloud text editor-acknowledgements.plist"; sourceTree = "<group>"; };
+		580B9E5EDCA0BD147E6F806EF06AC5A1 /* Pods-iCloud text editor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iCloud text editor-dummy.m"; sourceTree = "<group>"; };
+		5882265EDF6546E0CC16AD6F8FCAA7A4 /* SyntaxTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyntaxTextView.swift; path = Sources/View/SyntaxTextView.swift; sourceTree = "<group>"; };
+		5B087464D9DB5E77E6541F5641232B8D /* Pods-iCloud text editor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iCloud text editor-Info.plist"; sourceTree = "<group>"; };
+		6934E978F9B62F5B68E98738744A8CF4 /* Paragraph.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Paragraph.swift; path = Sources/Model/Paragraph.swift; sourceTree = "<group>"; };
+		70959EA61D921435952172271E37277B /* SyntaxColorTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyntaxColorTheme.swift; path = Sources/Model/SyntaxColorTheme.swift; sourceTree = "<group>"; };
+		7D949307FBAC227C246A3920BC08AFAF /* Pods-iCloud text editor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iCloud text editor.release.xcconfig"; sourceTree = "<group>"; };
+		7F39655EE7CF9F9AAD7EF68D2B747214 /* Python3Lexer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Python3Lexer.swift; path = Sources/Languages/Python3Lexer.swift; sourceTree = "<group>"; };
+		8722A65339829E6D620A1C792B0EA0C0 /* Pods_iCloud_text_editor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iCloud_text_editor.framework; path = "Pods-iCloud text editor.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C479B3A3C0BB83FCBD23CADB2E45BD4 /* Types.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Types.swift; path = Sources/Util/Types.swift; sourceTree = "<group>"; };
+		8DFC100D5A99118D0522AA635A7BF1EB /* NSTextView+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTextView+UIKit.swift"; path = "Sources/Util/NSTextView+UIKit.swift"; sourceTree = "<group>"; };
+		990AEECF6DFCE6B554BD44DECDE62632 /* Token.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Token.swift; path = Sources/Model/Token.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A16288A61BBB64FBF3BA8DE7F497D5FC /* Sourceful.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sourceful.xcconfig; sourceTree = "<group>"; };
+		A69358BADF7D94676AB13DAEC1EF1A59 /* TextViewWrapperView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextViewWrapperView.swift; path = Sources/View/TextViewWrapperView.swift; sourceTree = "<group>"; };
+		BD5EABA9E84DB2F0435A65CE592F5F02 /* String+Range.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Range.swift"; path = "Sources/Util/String+Range.swift"; sourceTree = "<group>"; };
+		CBB3ACC9C58287396F5F08B9D508EE23 /* Sourceful-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Sourceful-dummy.m"; sourceTree = "<group>"; };
+		D2BD723DBBE83A42B13DD3F663EEE969 /* SwiftLexer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftLexer.swift; path = Sources/Languages/SwiftLexer.swift; sourceTree = "<group>"; };
+		D89CAACA18347CA165B4BC532396A40B /* Pods-iCloud text editor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iCloud text editor.debug.xcconfig"; sourceTree = "<group>"; };
+		DD2C308B19A12C7CBE346ED548D6F283 /* Sourceful-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Sourceful-Info.plist"; sourceTree = "<group>"; };
+		E39059843D104074A9F85E22A94DFD02 /* Paragraphs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Paragraphs.swift; path = Sources/View/Paragraphs.swift; sourceTree = "<group>"; };
+		E52B12322F23B2CA4D984CA0BCACB600 /* SourceCodeToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceCodeToken.swift; path = Sources/SourceCodeToken.swift; sourceTree = "<group>"; };
+		E89D09380AB6275CB698624AC05D1BF6 /* NSMutableAttributedString+Tokens.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSMutableAttributedString+Tokens.swift"; path = "Sources/Util/NSMutableAttributedString+Tokens.swift"; sourceTree = "<group>"; };
+		E9023271D7BF511EF54209BDB69429AC /* Sourceful-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sourceful-prefix.pch"; sourceTree = "<group>"; };
+		F0592527E65BA9D69CCCE659F16DD8A1 /* Pods-iCloud text editor-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iCloud text editor-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FD1D501B060E52883F3D66368F12F5E7 /* SyntaxTextView+TextViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SyntaxTextView+TextViewDelegate.swift"; path = "Sources/View/SyntaxTextView+TextViewDelegate.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D50A2A9EFACBC0EA7069209E5AB0A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D309769A6F1D4F08C2D4E9C41DC5D1B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8870D6FCFF4B09EBEBC5B2C2D68316A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB3A0255E86CD3C3F2DD0C694658549 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		098A04F639B7B02C0BF6DBB2E432C52C /* Pods-iCloud text editor */ = {
+			isa = PBXGroup;
+			children = (
+				4AA101ACCE933C564A894EF90AEA7B4E /* Pods-iCloud text editor.modulemap */,
+				F0592527E65BA9D69CCCE659F16DD8A1 /* Pods-iCloud text editor-acknowledgements.markdown */,
+				5631A23D4B6D3E088C3F5B82BA051FE3 /* Pods-iCloud text editor-acknowledgements.plist */,
+				580B9E5EDCA0BD147E6F806EF06AC5A1 /* Pods-iCloud text editor-dummy.m */,
+				4087153057507FFFC7943AE3DA2CF056 /* Pods-iCloud text editor-frameworks.sh */,
+				5B087464D9DB5E77E6541F5641232B8D /* Pods-iCloud text editor-Info.plist */,
+				30E87C0CF1A5C16547692C193F49F0B6 /* Pods-iCloud text editor-umbrella.h */,
+				D89CAACA18347CA165B4BC532396A40B /* Pods-iCloud text editor.debug.xcconfig */,
+				7D949307FBAC227C246A3920BC08AFAF /* Pods-iCloud text editor.release.xcconfig */,
+			);
+			name = "Pods-iCloud text editor";
+			path = "Target Support Files/Pods-iCloud text editor";
+			sourceTree = "<group>";
+		};
+		61E7253E02FB4F1D38D1A3C9A6F28A1F /* Sourceful */ = {
+			isa = PBXGroup;
+			children = (
+				130EAB4D9D5A9BFB53A8B4E78890100E /* ASTVisualizer.swift */,
+				2131EE9DCCDA57AEEB476A0D7469A6BB /* DefaultSourceCodeTheme.swift */,
+				331D69DFB112B4C97C80919F9503A12F /* InnerTextView.swift */,
+				22D74317E60984BE0D0158E85F61808F /* Lexer.swift */,
+				5116632417FE511BE404D12E8CB85963 /* LineNumberLayoutManager.swift */,
+				E89D09380AB6275CB698624AC05D1BF6 /* NSMutableAttributedString+Tokens.swift */,
+				8DFC100D5A99118D0522AA635A7BF1EB /* NSTextView+UIKit.swift */,
+				6934E978F9B62F5B68E98738744A8CF4 /* Paragraph.swift */,
+				E39059843D104074A9F85E22A94DFD02 /* Paragraphs.swift */,
+				7F39655EE7CF9F9AAD7EF68D2B747214 /* Python3Lexer.swift */,
+				0AF2F5E549B094F8AB395116F7DF83C2 /* RegexLexer.swift */,
+				181FC9932528B2FEC7BBA808BC96959D /* SourceCodeRegexLexer.swift */,
+				4545BE82D454BE3C5FDAF39FCDF79CF4 /* SourceCodeTheme.swift */,
+				E52B12322F23B2CA4D984CA0BCACB600 /* SourceCodeToken.swift */,
+				BD5EABA9E84DB2F0435A65CE592F5F02 /* String+Range.swift */,
+				D2BD723DBBE83A42B13DD3F663EEE969 /* SwiftLexer.swift */,
+				70959EA61D921435952172271E37277B /* SyntaxColorTheme.swift */,
+				5882265EDF6546E0CC16AD6F8FCAA7A4 /* SyntaxTextView.swift */,
+				FD1D501B060E52883F3D66368F12F5E7 /* SyntaxTextView+TextViewDelegate.swift */,
+				434631A1BB401D32BF6A48498796811A /* SyntaxTextViewLayoutManager.swift */,
+				A69358BADF7D94676AB13DAEC1EF1A59 /* TextViewWrapperView.swift */,
+				990AEECF6DFCE6B554BD44DECDE62632 /* Token.swift */,
+				8C479B3A3C0BB83FCBD23CADB2E45BD4 /* Types.swift */,
+				82F079E75228E48B0D551182B0FD1EA1 /* Support Files */,
+			);
+			name = Sourceful;
+			path = Sourceful;
+			sourceTree = "<group>";
+		};
+		82F079E75228E48B0D551182B0FD1EA1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F0338D8E0B7932B8E4021DDEAB332B3 /* Sourceful.modulemap */,
+				A16288A61BBB64FBF3BA8DE7F497D5FC /* Sourceful.xcconfig */,
+				CBB3ACC9C58287396F5F08B9D508EE23 /* Sourceful-dummy.m */,
+				DD2C308B19A12C7CBE346ED548D6F283 /* Sourceful-Info.plist */,
+				E9023271D7BF511EF54209BDB69429AC /* Sourceful-prefix.pch */,
+				12B943C8C56E784535AB9BF83E0D013C /* Sourceful-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Sourceful";
+			sourceTree = "<group>";
+		};
+		961DC40F2AC719AD8A813851D45270FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8722A65339829E6D620A1C792B0EA0C0 /* Pods_iCloud_text_editor.framework */,
+				0815C3EBE83FC43D1EE0633E115623C8 /* Sourceful.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D1A6099F829EE511EED2E344424EF4A9 /* Pods */,
+				961DC40F2AC719AD8A813851D45270FE /* Products */,
+				D56E31E5573C6FF860DF22436905DDCA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D1A6099F829EE511EED2E344424EF4A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61E7253E02FB4F1D38D1A3C9A6F28A1F /* Sourceful */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D56E31E5573C6FF860DF22436905DDCA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				098A04F639B7B02C0BF6DBB2E432C52C /* Pods-iCloud text editor */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		46CD56EF5459CB046FED3C763E662A4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D40347164E2C33A8A11D25E59001D49 /* Pods-iCloud text editor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64ABBDA9A7D276165D8C0752C4E12EBC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C94DE881BC7188E01A7955F0BD24D2 /* Sourceful-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0AC99FEBA3014AAA265F5C1A990A52DF /* Pods-iCloud text editor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCBEF8AE271B5F849F422AF6097CC589 /* Build configuration list for PBXNativeTarget "Pods-iCloud text editor" */;
+			buildPhases = (
+				46CD56EF5459CB046FED3C763E662A4F /* Headers */,
+				26BA223DF6EBCA0B01265C885926FE0B /* Sources */,
+				8870D6FCFF4B09EBEBC5B2C2D68316A9 /* Frameworks */,
+				BE5F35CF8DBE20DFD3BAA3477CE65E0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEAB4AAF9BC5D16278FF6B9CF259C69F /* PBXTargetDependency */,
+			);
+			name = "Pods-iCloud text editor";
+			productName = "Pods-iCloud text editor";
+			productReference = 8722A65339829E6D620A1C792B0EA0C0 /* Pods_iCloud_text_editor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		608A783A94C637907E2BD7379BA798B2 /* Sourceful */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C95BABB9256B3454B2A8626DCD3E842 /* Build configuration list for PBXNativeTarget "Sourceful" */;
+			buildPhases = (
+				64ABBDA9A7D276165D8C0752C4E12EBC /* Headers */,
+				DECEA2E34B657C8676702F3E3579446B /* Sources */,
+				5D50A2A9EFACBC0EA7069209E5AB0A74 /* Frameworks */,
+				11C325E6C5AE41C11EF228E949DBD823 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sourceful;
+			productName = Sourceful;
+			productReference = 0815C3EBE83FC43D1EE0633E115623C8 /* Sourceful.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 961DC40F2AC719AD8A813851D45270FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AC99FEBA3014AAA265F5C1A990A52DF /* Pods-iCloud text editor */,
+				608A783A94C637907E2BD7379BA798B2 /* Sourceful */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11C325E6C5AE41C11EF228E949DBD823 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5F35CF8DBE20DFD3BAA3477CE65E0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26BA223DF6EBCA0B01265C885926FE0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C7CA82AFB9E99598072460CC46935F /* Pods-iCloud text editor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DECEA2E34B657C8676702F3E3579446B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6425B0D54BCF5A5639C82A030A6ADBE2 /* ASTVisualizer.swift in Sources */,
+				FE59E45DFB86448BFDABCFEC6C230891 /* DefaultSourceCodeTheme.swift in Sources */,
+				285B368DF0F5C9B2B6E2044125D6AF9C /* InnerTextView.swift in Sources */,
+				9751658B0244CE42D1AC39B36A3F4579 /* Lexer.swift in Sources */,
+				3F9D6F5F34C6AEE7B32DD41ED6819FDC /* LineNumberLayoutManager.swift in Sources */,
+				D3499467A875700023628862A6DBA4F3 /* NSMutableAttributedString+Tokens.swift in Sources */,
+				35D7188A8D5091F3F6481518EE2CEC18 /* NSTextView+UIKit.swift in Sources */,
+				8476C5EF64EC14AE95AE3F6A3346C998 /* Paragraph.swift in Sources */,
+				72786BC816553F48AC56FADB0D97E193 /* Paragraphs.swift in Sources */,
+				DCF3683F93F173B04858C6F93D74F32A /* Python3Lexer.swift in Sources */,
+				8C2A23050C9DFA5982041145212D84D6 /* RegexLexer.swift in Sources */,
+				107B49DB0B033FA4F56D56CF575D5EB1 /* SourceCodeRegexLexer.swift in Sources */,
+				B38293C421FF42503DE3B481DE5AC101 /* SourceCodeTheme.swift in Sources */,
+				237D396BA4C5000F66E836836BCFE901 /* SourceCodeToken.swift in Sources */,
+				B9639032B067BE01FD9AC6B3653282D1 /* Sourceful-dummy.m in Sources */,
+				D348750C48BEB8AEB4E50F28279137B2 /* String+Range.swift in Sources */,
+				268C3D98452530E1ED68337EE9C7B8BC /* SwiftLexer.swift in Sources */,
+				E5C443E0BC502A20D93EB89F68927C3C /* SyntaxColorTheme.swift in Sources */,
+				301B0D565B70275E9BFB7F66B2B6626C /* SyntaxTextView+TextViewDelegate.swift in Sources */,
+				4741DD6F6B82642D3F5499CACE38BE16 /* SyntaxTextView.swift in Sources */,
+				DCFD5DD96372033FD6833F614A21D499 /* SyntaxTextViewLayoutManager.swift in Sources */,
+				973FB3BEA3A0CE0434983482FBDE59FE /* TextViewWrapperView.swift in Sources */,
+				E2A240E7EE2D1FAB5DA8590C26D7D10F /* Token.swift in Sources */,
+				E79B2BE806EF7859ABAB5BE7CC179670 /* Types.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEAB4AAF9BC5D16278FF6B9CF259C69F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sourceful;
+			target = 608A783A94C637907E2BD7379BA798B2 /* Sourceful */;
+			targetProxy = 9AC59CC752413CB3F1121400EAA288CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08E4C427C7A5A4739C82F04AA0E5AC5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A16288A61BBB64FBF3BA8DE7F497D5FC /* Sourceful.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Sourceful/Sourceful-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Sourceful/Sourceful-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Sourceful/Sourceful.modulemap";
+				PRODUCT_MODULE_NAME = Sourceful;
+				PRODUCT_NAME = Sourceful;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		09A06D0D6386EDE18BDE5D01E69EDB56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D949307FBAC227C246A3920BC08AFAF /* Pods-iCloud text editor.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iCloud text editor/Pods-iCloud text editor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iCloud text editor/Pods-iCloud text editor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		3FF65064E9505C69D2298B52C7CCA8EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A16288A61BBB64FBF3BA8DE7F497D5FC /* Sourceful.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Sourceful/Sourceful-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Sourceful/Sourceful-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Sourceful/Sourceful.modulemap";
+				PRODUCT_MODULE_NAME = Sourceful;
+				PRODUCT_NAME = Sourceful;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C30ED0F18BB96D221CF0E0B7EF410961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D89CAACA18347CA165B4BC532396A40B /* Pods-iCloud text editor.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iCloud text editor/Pods-iCloud text editor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iCloud text editor/Pods-iCloud text editor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
+				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C95BABB9256B3454B2A8626DCD3E842 /* Build configuration list for PBXNativeTarget "Sourceful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF65064E9505C69D2298B52C7CCA8EB /* Debug */,
+				08E4C427C7A5A4739C82F04AA0E5AC5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCBEF8AE271B5F849F422AF6097CC589 /* Build configuration list for PBXNativeTarget "Pods-iCloud text editor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30ED0F18BB96D221CF0E0B7EF410961 /* Debug */,
+				09A06D0D6386EDE18BDE5D01E69EDB56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

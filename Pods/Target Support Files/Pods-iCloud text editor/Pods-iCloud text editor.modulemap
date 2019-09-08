@@ -1,0 +1,6 @@
+framework module Pods_iCloud_text_editor {
+  umbrella header "Pods-iCloud text editor-umbrella.h"
+
+  export *
+  module * { export * }
+}
